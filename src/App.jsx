@@ -1,12 +1,16 @@
-import RatingWidget from './rating-widget'
+import AfterInstall from './AfterInstall'
 import './App.css'
+import Rate from './Rate'
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
-    <>
-      <div className='header'>Thank you for using <img src="./28x28.png" />Edit Website Extension!</div>
-      <RatingWidget></RatingWidget>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/after-install" element={<AfterInstall />} />
+        <Route path="/rate" element={<Rate />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
