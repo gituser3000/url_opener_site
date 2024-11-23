@@ -1,16 +1,16 @@
 import AfterInstall from './AfterInstall'
 import './App.css'
 import Rate from './Rate'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <Routes>
         <Route path="/after-install" element={<AfterInstall />} />
         <Route path="/rate" element={<Rate />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
