@@ -3,8 +3,8 @@ import { Rating, Stack, Typography } from '@mui/material'
 
 export const RATING_KEY = 'app_rating_score'
 
-const FEEDBACK_FORM_LINK = 'https://docs.google.com/forms/d/e/___YOUR_DOC___/viewform'
-const GOOD_REVIEW_LINK = 'https://chromewebstore.google.com/detail/___YOUR_EXT___/reviews'
+const FEEDBACK_FORM_LINK = 'https://docs.google.com/forms/d/e/1FAIpQLSdkGabIlv8xzv_sNaWQWJ04Iu7QYySu5jjyNLmyRMn9HuYIdg/viewform?usp=sf_link'
+const GOOD_REVIEW_LINK = 'https://chromewebstore.google.com/detail/Edit_website/hhdmnjenemjjibploldnadhffkgkpcpo/reviews'
 
 function RatingWidget() {
   const [value, setValue] = useState<number | null>(0)
